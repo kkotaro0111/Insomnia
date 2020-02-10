@@ -1,4 +1,7 @@
 
+# 雨だったら、晴れにする
+execute if predicate insomnia:is_raining unless predicate insomnia:is_thundering run weather rain 1
+
 # 現在時刻をcurrentTickに保存する
 execute store result score currentTick insomnia run time query daytime
 # それが 12541〜23458 の間（就寝可能時間帯）なら、時間を変更する
