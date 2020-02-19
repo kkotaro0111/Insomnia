@@ -7,4 +7,4 @@ execute as @a[nbt={SleepTimer:60s}] run tellraw @a {"text": "", "extra": ["お�
 execute if predicate insomnia:is_raining unless predicate insomnia:is_thundering run weather rain 1
 
 # 朝にする
-time set 0
+function insomnia:day/day_ticker
