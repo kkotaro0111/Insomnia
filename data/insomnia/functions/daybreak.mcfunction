@@ -1,5 +1,5 @@
 # 値リセット
-scoreboard players set flag insomnia 0
+scoreboard players set sleep_flag insomnia 0
 
 # 挨拶
 execute as @a[scores={insomnia_flag=1}] run tellraw @s {"text": "", "extra": ["おはようございます！  ", {"selector": "@s"}, " さん！"], "color": "yellow"}

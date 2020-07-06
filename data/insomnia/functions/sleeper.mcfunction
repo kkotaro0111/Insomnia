@@ -7,6 +7,4 @@ execute as @a[scores={insomnia_st=60..100}] run scoreboard players set @s insomn
 execute as @a[scores={insomnia_st=101..}] run scoreboard players set @s insomnia_flag 2
 
 # 誰か一人が寝てたら(insomnia_flag == 1)、就寝処理をする
-execute store success score flag insomnia run execute if entity @a[scores={insomnia_flag=1}]
-execute if score flag insomnia matches 1.. run function insomnia:daybreak
-
+execute store success score sleep_flag insomnia run execute if entity @a[scores={insomnia_flag=1}]
